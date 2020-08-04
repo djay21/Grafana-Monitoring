@@ -8,7 +8,11 @@ This repo includes:-
 1. how to install grafana,
 2. Setting prometheus,cadvisor, & node exporter on the target machine through <i>docker-compose and promethues.yml</i> file , &
 3. Adding prometheus as a datasource to grafana server.
-4. A customised dasboard which is developed only to monitor docker containers and basic system details, like cpu load, memory. space left etc. A screenshot is attached below for reference.
+4. A customised dasboard which is developed only to monitor docker containers and basic system details, like cpu load, memory, space left etc. 
+ To integrate this dashboard into your grafana server, 
+ Go to Dashboards >> Manage dashboards >> import from panel json && paste this dashboad.json and then save it. 
+ 
+ A screenshot is attached below for reference.
 
 
 # Also you can reset grafana credentials with the command given below.
