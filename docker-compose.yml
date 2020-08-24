@@ -17,7 +17,17 @@ services:
         depends_on:
             - cadvisor
         networks:
+            - samplenet    
+            
+    grafana_server:
+        image: grafana/grafana:6.5.0
+        restart: always
+        ports:
+            - '3001:3000'
+        container_name: grafana_server
+        networks:
             - samplenet
+ 
     cadvisor:
         image: google/cadvisor
         restart: always
