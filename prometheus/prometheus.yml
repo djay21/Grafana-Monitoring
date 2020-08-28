@@ -1,0 +1,29 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+rule_files:
+  - "alert.rules"
+alerting:
+  alertmanagers:
+  - scheme: http
+    static_configs:
+    - targets:
+      - "alertmanager:9093"
+
+scrape_configs:
+  # The monitoring machine.
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['prometheus:9090']
+  - job_name: 'monitoring-metrics'
+    static_configs:
+      - targets: ['node-exporter:9100']
+  - job_name: 'cadvisor-metrics'
+    static_configs:
+      - targets: ['cadvisor:8080']
+  # - job_name: 'baggify-metrics'
+  #   static_configs:
+  #     - targets: ['dt-devops.westeurope.cloudapp.azure.com:8020']
+  # - job_name: 'smartify-metrics'
+  #   static_configs:
+  #   - targets: ['smartifypt.centralindia.cloudapp.azure.com:8020']
