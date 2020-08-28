@@ -21,9 +21,4 @@ scrape_configs:
   - job_name: 'cadvisor-metrics'
     static_configs:
       - targets: ['cadvisor:8080']
-  # - job_name: 'baggify-metrics'
-  #   static_configs:
-  #     - targets: ['dt-devops.westeurope.cloudapp.azure.com:8020']
-  # - job_name: 'smartify-metrics'
-  #   static_configs:
-  #   - targets: ['smartifypt.centralindia.cloudapp.azure.com:8020']
+ 
