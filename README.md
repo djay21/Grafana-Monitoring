@@ -29,3 +29,7 @@ This repo includes:-
 
 ![Dashboard](https://github.com/djay21/Grafana-Monitoring/blob/master/grafana-2.png)
 
+
+
+# Autodeploy Grafana server, Prometheus & Cadvisor
+<h4> wget -O - https://raw.githubusercontent.com/djay21/Grafana-Monitoring/master/grafana-autodeploy.sh | bash </h4> <br> 
