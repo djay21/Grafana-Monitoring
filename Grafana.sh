@@ -17,4 +17,8 @@
 # #grafana-cli --config "/etc/configuration/" admin reset-admin-password mynewpassword
 
 
+apt install figlet -y && figlet Grafana Installation
+git clone https://github.com/djay21/Grafana-Monitoring.git
+cd Grafana-Monitoring 
 docker-compose up -d || sudo docker-compose up -d
+echo -e "echo -e "\n \n Grafana is running on port 6003................ "
