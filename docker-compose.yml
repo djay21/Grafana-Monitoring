@@ -9,8 +9,6 @@ services:
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
       - '--storage.tsdb.retention=6w'
-    links:
-      - alertmanager:alertmanager
     restart: always
     networks:
       - monitor-net
